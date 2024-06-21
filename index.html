@@ -16,14 +16,14 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
 	<link rel="manifest" href="img/favicon/site.webmanifest">
 	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-	<meta name="msapplication-TileColor" content="#000000">
+	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="theme-color" content="#ffffff">
 	<!-- styles -->
 	<link rel="stylesheet" href="css/vendor.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
 </head>
 
-<body class="scroll-disabled">
+<body class="scroll-disabled-body">
 	<!-- wrapper -->
 	<div class="wrapper">
 		<!-- header -->
@@ -31,10 +31,13 @@
 			<div class="container">
 				<div class="header__wrapper">
 					<a href="index.html" class="header__logotype">
-						<img src="img/logotype.svg" width="207" height="60" alt="PROДОСТАВКА">
+						<img src="img/logotype.svg" width="187" height="54" alt="PROДОСТАВКА">
 					</a>
 					<nav class="nav header__nav">
 						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="#" class="nav__link">Услуги</a>
+							</li>
 							<li class="nav__item">
 								<a href="#" class="nav__link">Все акции</a>
 							</li>
@@ -45,7 +48,7 @@
 								<a href="#" class="nav__link">Сотрудничество</a>
 							</li>
 							<li class="nav__item">
-								<a href="#" class="nav__link">Сотрудничество</a>
+								<a href="#" class="nav__link">О компании</a>
 							</li>
 							<li class="nav__item">
 								<a href="#" class="nav__link">Контакты</a>
@@ -92,7 +95,7 @@
 					<!-- categories -->
 					<div class="categories main__categories">
 						<div class="categories__wrap">
-							<div class="categories__scroll" data-simplebar>
+							<div class="categories__scroll scrollable">
 								<ul class="categories__list">
 									<li class="categories__item">
 										<a href="#" class="categories__link">
@@ -180,7 +183,30 @@
 				</div>
 				<div class="main__center">
 					<div class="main__wrapper">
-						<div class="main__scroll" data-simplebar>
+						<div class="main__scroll scrollable">
+							<div class="main__top">
+								<button class="main__categories-trigger categories-trigger">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-categories"></use>
+									</svg>
+									<span>Категории товаров</span>
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-caret"></use>
+									</svg>
+								</button>
+								<!-- search products -->
+								<div class="search-products main__search">
+									<form action="#" class="search-products__form">
+										<input type="text" class="search-products__input" placeholder="Поиск по товарам...">
+										<button class="search-products__btn">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-search"></use>
+											</svg>
+										</button>
+									</form>
+								</div>
+								<!-- end of search products -->
+							</div>
 							<!-- main products -->
 							<div class="main-products">
 								<div class="main-products__wrap">
@@ -287,34 +313,22 @@
 											<div class="swiper-wrapper">
 												<div class="swiper-slide">
 													<a href="#" class="main-products-card main-products__item">
-														<span class="main-products-card__title">Сыры</span>
-														<picture class="main-products-card__img">
-															<img src="img/main-products-02.png" alt="Image">
-														</picture>
+														<span class="main-products-card__title">Место для текста</span>
 													</a>
 												</div>
 												<div class="swiper-slide">
 													<a href="#" class="main-products-card main-products__item">
-														<span class="main-products-card__title">Йогурты <br>и десерты</span>
-														<picture class="main-products-card__img">
-															<img src="img/main-products-03.png" alt="Image">
-														</picture>
+														<span class="main-products-card__title">Место для текста</span>
 													</a>
 												</div>
 												<div class="swiper-slide">
 													<a href="#" class="main-products-card main-products__item">
-														<span class="main-products-card__title">Молоко</span>
-														<picture class="main-products-card__img">
-															<img src="img/main-products-04.png" alt="Image">
-														</picture>
+														<span class="main-products-card__title">Место для текста</span>
 													</a>
 												</div>
 												<div class="swiper-slide">
 													<a href="#" class="main-products-card main-products__item">
-														<span class="main-products-card__title">Творог</span>
-														<picture class="main-products-card__img">
-															<img src="img/main-products-05.png" alt="Image">
-														</picture>
+														<span class="main-products-card__title">Место для текста</span>
 													</a>
 												</div>
 											</div>
@@ -330,7 +344,7 @@
 					<!-- profile -->
 					<div class="profile main__profile">
 						<div class="profile__wrap">
-							<div class="profile__scroll" data-simplebar>
+							<div class="profile__scroll scrollable">
 								<div class="profile__wrapper">
 									<div class="profile__top">
 										<span class="profile__name">Александр</span>
