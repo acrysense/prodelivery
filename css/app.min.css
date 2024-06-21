@@ -152,6 +152,11 @@ svg {
 .header__contacts {
   margin-left: 21px;
 }
+@media screen and (max-width: 1023px) {
+  .header__contacts {
+    margin-left: auto;
+  }
+}
 @media screen and (max-width: 767px) {
   .header__contacts {
     display: none;
@@ -195,6 +200,29 @@ svg {
     color: #EC904C;
   }
 }
+.header__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media screen and (min-width: 1024px) {
+  .header__controls {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__controls {
+    margin-top: auto;
+    margin-bottom: 6px;
+  }
+}
 
 .nav__list {
   display: -webkit-box;
@@ -232,6 +260,74 @@ svg {
   .nav__link:hover {
     color: #EC904C;
   }
+}
+
+.hamburger {
+  position: relative;
+  z-index: 1;
+  display: block;
+  padding: 0;
+  min-width: 30px;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+}
+.hamburger:focus {
+  outline: none;
+}
+.hamburger__inner {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #569F4C;
+  border-radius: 3px;
+}
+.hamburger__inner:first-child {
+  top: 5px;
+}
+.hamburger__inner:nth-child(2) {
+  top: 13px;
+}
+.hamburger__inner:last-child {
+  top: 21px;
+}
+
+.profile-trigger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 17px;
+  padding: 0;
+  min-width: 28px;
+  width: 28px;
+  height: 28px;
+  font-size: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.profile-trigger > svg {
+  min-width: 28px;
+  width: 28px;
+  height: 28px;
+  color: #569F4C;
+}
+.profile-trigger:focus {
+  outline: none;
 }
 
 .c-socnav__list {
