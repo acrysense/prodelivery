@@ -5,11 +5,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>PROДОСТАВКА - Избранное</title>
-	<meta property="og:title" content="PROДОСТАВКА - Избранное">
+	<title>PROДОСТАВКА - Адреса</title>
+	<meta property="og:title" content="PROДОСТАВКА - Адреса">
 	<meta property="og:description" content="Описание">
 	<meta property="og:url" content="/">
-	<meta property="og:site_name" content="PROДОСТАВКА - Избранное">
+	<meta property="og:site_name" content="PROДОСТАВКА - Адреса">
 	<!-- favicon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -225,49 +225,66 @@
 									</svg>
 								</button>
 							</div>
-							<div class="favorites">
-								<div class="favorites__wrapper">
-									<div class="favorites-card favorites__item">
-										<a href="#" class="favorites-card__img">
-											<button class="favorites-card__like">
-												<svg>
-													<use xlink:href="img/sprite.svg#icon-like-fill"></use>
-												</svg>
-											</button>
-											<img src="img/favorites-01.png" alt="Image">
-										</a>
-										<div class="favorites-card__body">
-											<span class="favorites-card__title">Огурцы <br>Луховицкие, 1 кг</span>
-											<a href="#" class="favorites-card__btn btn btn--sm">20.00 MDL</a>
+							<div class="address">
+								<div class="address__wrap">
+									<div class="address__main">
+										<h2 class="address__heading">Адреса доставки</h2>
+										<div class="address__wrapper">
+											<div class="address-checkbox address__item">
+												<input type="radio" name="address" class="address-checkbox__input" id="address-01" checked>
+												<label for="address-01" class="address-checkbox__group">
+													<div class="address-checkbox__body">
+														<div class="address-checkbox__inner">
+															<span class="address-checkbox__title">г. Москва, ул. Новая, д. 12</span>
+															<button class="address-checkbox__edit" aria-label="Редактировать">
+																<svg>
+																	<use xlink:href="img/sprite.svg#icon-edit"></use>
+																</svg>
+															</button>
+														</div>
+														<span class="address-checkbox__help">кв. 170, подъезд 3, этаж 4, домофон 1150, </span>
+													</div>
+													<span class="address-checkbox__icon"></span>
+												</label>
+											</div>
+											<div class="address-checkbox address__item">
+												<input type="radio" name="address" class="address-checkbox__input" id="address-02">
+												<label for="address-02" class="address-checkbox__group">
+													<div class="address-checkbox__body">
+														<div class="address-checkbox__inner">
+															<span class="address-checkbox__title">г. Москва, ул. Старая, д. 52</span>
+															<button class="address-checkbox__edit" aria-label="Редактировать">
+																<svg>
+																	<use xlink:href="img/sprite.svg#icon-edit"></use>
+																</svg>
+															</button>
+														</div>
+														<span class="address-checkbox__help">кв. 170, подъезд 3, этаж 4, домофон 1150, </span>
+													</div>
+													<span class="address-checkbox__icon"></span>
+												</label>
+											</div>
+											<div class="address-checkbox address__item">
+												<input type="radio" name="address" class="address-checkbox__input" id="address-03">
+												<label for="address-03" class="address-checkbox__group">
+													<div class="address-checkbox__body">
+														<div class="address-checkbox__inner">
+															<span class="address-checkbox__title">г. Москва, ул. Ленина, д. 12</span>
+															<button class="address-checkbox__edit" aria-label="Редактировать">
+																<svg>
+																	<use xlink:href="img/sprite.svg#icon-edit"></use>
+																</svg>
+															</button>
+														</div>
+														<span class="address-checkbox__help">кв. 170, подъезд 3, этаж 4, домофон 1150, </span>
+													</div>
+													<span class="address-checkbox__icon"></span>
+												</label>
+											</div>
 										</div>
 									</div>
-									<div class="favorites-card favorites__item">
-										<a href="#" class="favorites-card__img">
-											<button class="favorites-card__like">
-												<svg>
-													<use xlink:href="img/sprite.svg#icon-like-fill"></use>
-												</svg>
-											</button>
-											<img src="img/favorites-02.png" alt="Image">
-										</a>
-										<div class="favorites-card__body">
-											<span class="favorites-card__title">Молоко Эконива <br>3.2%, 1 л</span>
-											<a href="#" class="favorites-card__btn btn btn--sm">40.00 MDL</a>
-										</div>
-									</div>
-									<div class="favorites-card favorites__item">
-										<a href="#" class="favorites-card__img">
-											<button class="favorites-card__like">
-												<svg>
-													<use xlink:href="img/sprite.svg#icon-like-fill"></use>
-												</svg>
-											</button>
-											<img src="img/favorites-03.png" alt="Image">
-										</a>
-										<div class="favorites-card__body">
-											<span class="favorites-card__title">Конфеты Kinder <br>4 шт, 50 г</span>
-											<a href="#" class="favorites-card__btn btn btn--sm">19.00 MDL</a>
-										</div>
+									<div class="address__bottom">
+										<a href="#" class="address__btn btn btn--orange">Добавить новый адрес</a>
 									</div>
 								</div>
 							</div>

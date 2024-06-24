@@ -5,11 +5,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>PROДОСТАВКА - Избранное</title>
-	<meta property="og:title" content="PROДОСТАВКА - Избранное">
+	<title>PROДОСТАВКА - Главная</title>
+	<meta property="og:title" content="PROДОСТАВКА - Главная">
 	<meta property="og:description" content="Описание">
 	<meta property="og:url" content="/">
-	<meta property="og:site_name" content="PROДОСТАВКА - Избранное">
+	<meta property="og:site_name" content="PROДОСТАВКА - Главная">
 	<!-- favicon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -214,7 +214,7 @@
 				<div class="main__center">
 					<div class="main__wrapper">
 						<div class="main__scroll scrollable">
-							<div class="main__top main__top--mobile">
+							<div class="main__top">
 								<button class="main__categories-trigger" id="categories-toggle">
 									<svg>
 										<use xlink:href="img/sprite.svg#icon-categories"></use>
@@ -224,119 +224,171 @@
 										<use xlink:href="img/sprite.svg#icon-caret"></use>
 									</svg>
 								</button>
+								<!-- search products -->
+								<div class="search-products main__search">
+									<form action="#" class="search-products__form">
+										<input type="text" class="search-products__input" placeholder="Поиск по товарам...">
+										<button class="search-products__btn">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-search"></use>
+											</svg>
+										</button>
+									</form>
+								</div>
+								<!-- end of search products -->
 							</div>
-							<div class="favorites">
-								<div class="favorites__wrapper">
-									<div class="favorites-card favorites__item">
-										<a href="#" class="favorites-card__img">
-											<button class="favorites-card__like">
-												<svg>
-													<use xlink:href="img/sprite.svg#icon-like-fill"></use>
-												</svg>
-											</button>
-											<img src="img/favorites-01.png" alt="Image">
-										</a>
-										<div class="favorites-card__body">
-											<span class="favorites-card__title">Огурцы <br>Луховицкие, 1 кг</span>
-											<a href="#" class="favorites-card__btn btn btn--sm">20.00 MDL</a>
+							<!-- main products -->
+							<div class="main-products">
+								<div class="main-products__wrap">
+									<div class="main-products__slider">
+										<div class="swiper">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<a href="#" class="main-products-card main-products-card--white main-products__item">
+														<span class="main-products-card__title main-products-card__title--accent">
+															30% на <br>
+															свежие <br>
+															фрукты
+														</span>
+														<picture class="main-products-card__img">
+															<img src="img/main-products-01.png" alt="Image">
+														</picture>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="#" class="main-products-card main-products-card--white main-products__item">
+														<span class="main-products-card__title main-products-card__title--accent">
+															30% на <br>
+															свежие <br>
+															фрукты
+														</span>
+														<picture class="main-products-card__img">
+															<img src="img/main-products-01.png" alt="Image">
+														</picture>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="#" class="main-products-card main-products-card--white main-products__item">
+														<span class="main-products-card__title main-products-card__title--accent">
+															30% на <br>
+															свежие <br>
+															фрукты
+														</span>
+														<picture class="main-products-card__img">
+															<img src="img/main-products-01.png" alt="Image">
+														</picture>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="#" class="main-products-card main-products-card--white main-products__item">
+														<span class="main-products-card__title main-products-card__title--accent">
+															30% на <br>
+															свежие <br>
+															фрукты
+														</span>
+														<picture class="main-products-card__img">
+															<img src="img/main-products-01.png" alt="Image">
+														</picture>
+													</a>
+												</div>
+											</div>
 										</div>
 									</div>
-									<div class="favorites-card favorites__item">
-										<a href="#" class="favorites-card__img">
-											<button class="favorites-card__like">
-												<svg>
-													<use xlink:href="img/sprite.svg#icon-like-fill"></use>
-												</svg>
-											</button>
-											<img src="img/favorites-02.png" alt="Image">
-										</a>
-										<div class="favorites-card__body">
-											<span class="favorites-card__title">Молоко Эконива <br>3.2%, 1 л</span>
-											<a href="#" class="favorites-card__btn btn btn--sm">40.00 MDL</a>
+								</div>
+								<div class="main-products__wrap">
+									<h3 class="main-products__heading">Молочная продукция</h3>
+									<div class="main-products__slider">
+										<div class="swiper">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<a href="#" class="main-products-card main-products__item">
+														<span class="main-products-card__title">Сыры</span>
+														<picture class="main-products-card__img">
+															<img src="img/main-products-02.png" alt="Image">
+														</picture>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="#" class="main-products-card main-products__item">
+														<span class="main-products-card__title">Йогурты <br>и десерты</span>
+														<picture class="main-products-card__img">
+															<img src="img/main-products-03.png" alt="Image">
+														</picture>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="#" class="main-products-card main-products__item">
+														<span class="main-products-card__title">Молоко</span>
+														<picture class="main-products-card__img">
+															<img src="img/main-products-04.png" alt="Image">
+														</picture>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="#" class="main-products-card main-products__item">
+														<span class="main-products-card__title">Творог</span>
+														<picture class="main-products-card__img">
+															<img src="img/main-products-05.png" alt="Image">
+														</picture>
+													</a>
+												</div>
+											</div>
 										</div>
 									</div>
-									<div class="favorites-card favorites__item">
-										<a href="#" class="favorites-card__img">
-											<button class="favorites-card__like">
-												<svg>
-													<use xlink:href="img/sprite.svg#icon-like-fill"></use>
-												</svg>
-											</button>
-											<img src="img/favorites-03.png" alt="Image">
-										</a>
-										<div class="favorites-card__body">
-											<span class="favorites-card__title">Конфеты Kinder <br>4 шт, 50 г</span>
-											<a href="#" class="favorites-card__btn btn btn--sm">19.00 MDL</a>
+								</div>
+								<div class="main-products__wrap">
+									<h3 class="main-products__heading">Овощи и фрукты</h3>
+									<div class="main-products__slider">
+										<div class="swiper">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<a href="#" class="main-products-card main-products__item">
+														<span class="main-products-card__title">Место для текста</span>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="#" class="main-products-card main-products__item">
+														<span class="main-products-card__title">Место для текста</span>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="#" class="main-products-card main-products__item">
+														<span class="main-products-card__title">Место для текста</span>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="#" class="main-products-card main-products__item">
+														<span class="main-products-card__title">Место для текста</span>
+													</a>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
+							<!-- end of main products -->
 						</div>
 					</div>
 				</div>
 				<div class="main__right">
 					<!-- profile -->
 					<div class="profile main__profile">
-						<div class="profile__wrap">
+						<div class="profile__wrap profile__wrap--transparent">
 							<div class="profile__scroll scrollable">
 								<div class="profile__wrapper">
-									<div class="profile__top">
-										<span class="profile__name">Александр</span>
-										<a href="tel:79652052355" class="profile__phone">+7 965 205 23 55</a>
-									</div>
-									<ul class="profile__list">
-										<li class="profile__item">
-											<a href="#" class="profile__link">
-												<svg>
-													<use xlink:href="img/sprite.svg#icon-basket"></use>
-												</svg>
-												<span>Корзина</span>
-											</a>
-										</li>
-										<li class="profile__item">
-											<a href="#" class="profile__link">
-												<svg>
-													<use xlink:href="img/sprite.svg#icon-settings"></use>
-												</svg>
-												<span>Мой профиль</span>
-											</a>
-										</li>
-										<li class="profile__item">
-											<a href="#" class="profile__link">
-												<svg>
-													<use xlink:href="img/sprite.svg#icon-favorites"></use>
-												</svg>
-												<span>Избранное</span>
-											</a>
-										</li>
-										<li class="profile__item">
-											<a href="#" class="profile__link">
-												<svg>
-													<use xlink:href="img/sprite.svg#icon-order"></use>
-												</svg>
-												<span>Мои заказы</span>
-											</a>
-										</li>
-										<li class="profile__item">
-											<a href="#" class="profile__link">
-												<svg>
-													<use xlink:href="img/sprite.svg#icon-location"></use>
-												</svg>
-												<span>Адреса доставки</span>
-											</a>
-										</li>
-										<li class="profile__item">
-											<a href="#" class="profile__link">
-												<svg>
-													<use xlink:href="img/sprite.svg#icon-exit"></use>
-												</svg>
-												<span>Сменить пароль</span>
-											</a>
-										</li>
-									</ul>
 									<div class="profile__buttons">
-										<a href="#" class="profile__btn btn">Связаться с нами </a>
-										<a href="#" class="profile__btn btn btn--border-grey">Выйти из профиля</a>
+										<a href="#" class="profile__btn btn">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-user"></use>
+											</svg>
+											<span>Войти</span>
+										</a>
+										<a href="#" class="profile__btn btn btn--border">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-back-call"></use>
+											</svg>
+											<span>Связаться с нами</span>
+										</a>
 									</div>
 								</div>
 							</div>
