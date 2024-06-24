@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PROДОСТАВКА - Корзина</title>
+	<meta property="og:title" content="PROДОСТАВКА - Корзина">
+	<meta property="og:description" content="Описание">
+	<meta property="og:url" content="/">
+	<meta property="og:site_name" content="PROДОСТАВКА - Корзина">
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+	<!-- styles -->
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body class="scroll-disabled-body">
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<header class="header" id="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<a href="index.html" class="header__logotype">
+						<img src="img/logotype.svg" width="187" height="54" alt="PROДОСТАВКА">
+					</a>
+					<nav class="nav header__nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="#" class="nav__link">Услуги</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Все акции</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Доставка и оплата</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Сотрудничество</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">О компании</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="c-socnav header__socnav">
+						<ul class="c-socnav__list">
+							<li class="c-socnav__item">
+								<a href="#" class="c-socnav__link">
+									<svg class="c-socnav__icon">
+										<use xlink:href="img/sprite.svg#icon-tg"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="c-socnav__item">
+								<a href="#" class="c-socnav__link">
+									<svg class="c-socnav__icon">
+										<use xlink:href="img/sprite.svg#icon-viber"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="c-socnav__item">
+								<a href="#" class="c-socnav__link">
+									<svg class="c-socnav__icon">
+										<use xlink:href="img/sprite.svg#icon-whapp"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="header__contacts">
+						<a href="tel:88008008080" class="header__phone">8 800 800 80 80</a>
+						<a href="mailto:info@prodostavka.ru" class="header__link">info@prodostavka.ru</a>
+					</div>
+					<div class="header__controls">
+						<button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+						</button>
+						<button class="profile-trigger" id="profile-toggle">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-user-fill"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- end of header -->
+		<!-- main -->
+		<div class="main">
+			<div class="main__wrap">
+				<div class="main__center">
+					<div class="main__wrapper">
+						<div class="main__scroll scrollable">
+							<div class="main__top main__top--mobile">
+								<button class="main__categories-trigger" id="categories-toggle">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-categories"></use>
+									</svg>
+									<span>Категории товаров</span>
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-caret"></use>
+									</svg>
+								</button>
+							</div>
+							<div class="basket">
+								<div class="basket__top">
+									<a href="index.html" class="basket__back">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-back"></use>
+										</svg>
+										<span>Продолжить покупки</span>
+									</a>
+									<button class="basket__clear">Очистить корзину</button>
+								</div>
+								<div class="basket__wrapper">
+									<div class="basket__left">
+										<div class="basket__topping">
+											<h2 class="basket__heading">Ваш заказ</h2>
+											<span class="basket__amount">3 товара</span>
+										</div>
+										<div class="basket__items">
+											<div class="basket-card basket__item">
+												<picture class="basket-card__img">
+													<img src="img/favorites-04.png" alt="Image">
+												</picture>
+												<div class="basket-card__body">
+													<div class="basket-card__block">
+														<div class="basket-card__inner">
+															<span class="basket-card__title">Хлеб Рижский Franzeluta, 500 г</span>
+															<button class="basket-card__delete" aria-label="Удалить">
+																<svg>
+																	<use xlink:href="img/sprite.svg#icon-close"></use>
+																</svg>
+															</button>
+														</div>
+														<span class="basket-card__price">50.00 MDL/шт</span>
+													</div>
+													<div class="basket-card__block">
+														<div class="basket-card__bottom">
+															<div class="c-quantity basket-card__quantity">
+																<div class="c-quantity__inner">
+																	<button class="c-quantity__btn c-quantity__btn--minus">
+																		<svg>
+																			<use xlink:href="img/sprite.svg#icon-minus"></use>
+																		</svg>
+																	</button>
+																	<input type="number" class="c-quantity__value" value="3">
+																	<button class="c-quantity__btn c-quantity__btn--plus">
+																		<svg>
+																			<use xlink:href="img/sprite.svg#icon-plus"></use>
+																		</svg>
+																	</button>
+																</div>
+															</div>
+															<div class="basket-card__total">
+																<span class="basket-card__help">Сумма</span>
+																<span class="basket-card__value"><span>150.00</span> MDL</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="basket-card basket__item">
+												<picture class="basket-card__img">
+													<img src="img/favorites-01.png" alt="Image">
+												</picture>
+												<div class="basket-card__body">
+													<div class="basket-card__block">
+														<div class="basket-card__inner">
+															<span class="basket-card__title">Огурцы Луховицкие, 1 кг </span>
+															<button class="basket-card__delete" aria-label="Удалить">
+																<svg>
+																	<use xlink:href="img/sprite.svg#icon-close"></use>
+																</svg>
+															</button>
+														</div>
+														<span class="basket-card__price">175.00 MDL/кг</span>
+													</div>
+													<div class="basket-card__block">
+														<div class="basket-card__bottom">
+															<div class="c-quantity basket-card__quantity">
+																<div class="c-quantity__inner">
+																	<button class="c-quantity__btn c-quantity__btn--minus">
+																		<svg>
+																			<use xlink:href="img/sprite.svg#icon-minus"></use>
+																		</svg>
+																	</button>
+																	<input type="number" class="c-quantity__value" value="2">
+																	<button class="c-quantity__btn c-quantity__btn--plus">
+																		<svg>
+																			<use xlink:href="img/sprite.svg#icon-plus"></use>
+																		</svg>
+																	</button>
+																</div>
+															</div>
+															<div class="basket-card__total">
+																<span class="basket-card__help">Сумма</span>
+																<span class="basket-card__value"><span>350.00</span> MDL</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="basket-card basket__item">
+												<picture class="basket-card__img">
+													<img src="img/favorites-03.png" alt="Image">
+												</picture>
+												<div class="basket-card__body">
+													<div class="basket-card__block">
+														<div class="basket-card__inner">
+															<span class="basket-card__title">Конфеты Kinder 4 шт, 50 г</span>
+															<button class="basket-card__delete" aria-label="Удалить">
+																<svg>
+																	<use xlink:href="img/sprite.svg#icon-close"></use>
+																</svg>
+															</button>
+														</div>
+														<span class="basket-card__price">20.00 MDL/шт</span>
+													</div>
+													<div class="basket-card__block">
+														<div class="basket-card__bottom">
+															<div class="c-quantity basket-card__quantity">
+																<div class="c-quantity__inner">
+																	<button class="c-quantity__btn c-quantity__btn--minus">
+																		<svg>
+																			<use xlink:href="img/sprite.svg#icon-minus"></use>
+																		</svg>
+																	</button>
+																	<input type="number" class="c-quantity__value" value="1">
+																	<button class="c-quantity__btn c-quantity__btn--plus">
+																		<svg>
+																			<use xlink:href="img/sprite.svg#icon-plus"></use>
+																		</svg>
+																	</button>
+																</div>
+															</div>
+															<div class="basket-card__total">
+																<span class="basket-card__help">Сумма</span>
+																<span class="basket-card__value"><span>20.00</span> MDL</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="basket__right">
+										<div class="basket-total basket__total">
+											<div class="basket-total__wrap">
+												<div class="basket-total__block">
+													<div class="basket-total__top">
+														<div class="basket-total__top-inner">
+															<span class="basket-total__title">Доставка за 2 часа</span>
+															<button class="basket-total__edit" aria-label="Редактировать">
+																<svg>
+																	<use xlink:href="img/sprite.svg#icon-edit"></use>
+																</svg>
+															</button>
+														</div>
+														<span class="basket-total__help">г. Икс, ул. Новая, д. 12, кв. 150</span>
+													</div>
+													<div class="basket-total__details">
+														<div class="basket-total__details-item">
+															<span class="basket-total__subtitle">Контактные данные</span>
+															<span class="basket-total__value">Антон, 8 965 205 23 55</span>
+														</div>
+														<div class="basket-total__details-item">
+															<span class="basket-total__subtitle">Ваш комментарий</span>
+															<span class="basket-total__value">Не звонить в дверь!</span>
+														</div>
+													</div>
+												</div>
+												<div class="basket-total__block">
+													<div class="basket-total__info">
+														<div class="basket-total__inner">
+															<span class="basket-total__text">3 товара</span>
+															<span class="basket-total__text">560.00 MDL</span>
+														</div>
+														<div class="basket-total__inner">
+															<span class="basket-total__text">Доставка</span>
+															<span class="basket-total__text">160.00 MDL</span>
+														</div>
+														<div class="basket-total__inner">
+															<span class="basket-total__text">К оплате</span>
+															<span class="basket-total__text basket-total__text--lg">780.00 MDL</span>
+														</div>
+													</div>
+													<a href="#" class="basket-total__btn btn">Оформить заказ</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main__right">
+					<!-- profile -->
+					<div class="profile main__profile">
+						<div class="profile__wrap">
+							<div class="profile__scroll scrollable">
+								<div class="profile__wrapper">
+									<div class="profile__top">
+										<span class="profile__name">Александр</span>
+										<a href="tel:79652052355" class="profile__phone">+7 965 205 23 55</a>
+									</div>
+									<ul class="profile__list">
+										<li class="profile__item">
+											<a href="#" class="profile__link">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-basket"></use>
+												</svg>
+												<span>Корзина</span>
+											</a>
+										</li>
+										<li class="profile__item">
+											<a href="#" class="profile__link">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-settings"></use>
+												</svg>
+												<span>Мой профиль</span>
+											</a>
+										</li>
+										<li class="profile__item">
+											<a href="#" class="profile__link">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-favorites"></use>
+												</svg>
+												<span>Избранное</span>
+											</a>
+										</li>
+										<li class="profile__item">
+											<a href="#" class="profile__link">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-order"></use>
+												</svg>
+												<span>Мои заказы</span>
+											</a>
+										</li>
+										<li class="profile__item">
+											<a href="#" class="profile__link">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-location"></use>
+												</svg>
+												<span>Адреса доставки</span>
+											</a>
+										</li>
+										<li class="profile__item">
+											<a href="#" class="profile__link">
+												<svg>
+													<use xlink:href="img/sprite.svg#icon-exit"></use>
+												</svg>
+												<span>Сменить пароль</span>
+											</a>
+										</li>
+									</ul>
+									<div class="profile__buttons">
+										<a href="#" class="profile__btn btn">Связаться с нами </a>
+										<a href="#" class="profile__btn btn btn--border-grey">Выйти из профиля</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end of profile -->
+				</div>
+			</div>
+		</div>
+		<!-- end of main -->
+	</div>
+	<!-- end of wrapper -->
+	<!-- menu -->
+	<div class="menu" id="menu">
+		<div class="menu__wrap">
+			<nav class="nav menu__nav">
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a href="#" class="nav__link">Услуги</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Все акции</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Доставка и оплата</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Сотрудничество</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">О компании</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="c-socnav menu__socnav">
+				<ul class="c-socnav__list">
+					<li class="c-socnav__item">
+						<a href="#" class="c-socnav__link">
+							<svg class="c-socnav__icon">
+								<use xlink:href="img/sprite.svg#icon-tg"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="c-socnav__item">
+						<a href="#" class="c-socnav__link">
+							<svg class="c-socnav__icon">
+								<use xlink:href="img/sprite.svg#icon-viber"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="c-socnav__item">
+						<a href="#" class="c-socnav__link">
+							<svg class="c-socnav__icon">
+								<use xlink:href="img/sprite.svg#icon-whapp"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="menu__contacts">
+				<a href="tel:88008008080" class="menu__phone">8 800 800 80 80</a>
+				<a href="mailto:info@prodostavka.ru" class="menu__link">info@prodostavka.ru</a>
+			</div>
+		</div>
+	</div>
+	<!-- end of menu -->
+	<!-- scripts -->
+	<script src="js/vendor.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
