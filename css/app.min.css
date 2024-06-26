@@ -451,6 +451,59 @@ svg {
   outline: none;
 }
 
+.c-btn-quantity__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 14.5px 16px;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  background: #569F4C;
+  border-radius: 10px;
+}
+.c-btn-quantity__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #FFFFFF;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.c-btn-quantity__btn:focus {
+  outline: none;
+}
+.c-btn-quantity__btn--minus {
+  font-weight: bold;
+}
+.c-btn-quantity__value {
+  display: block;
+  margin: 0 9px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 .c-like > svg {
   color: #8E8E8E;
 }
@@ -1246,6 +1299,17 @@ svg {
   }
 }
 @media screen and (min-width: 768px) {
+  .main__top ~ .main__scroll {
+    padding-top: 0;
+    max-height: calc(100dvh - 101px - 25px - 54px - 50px);
+  }
+  .main__top ~ .main__scroll .simplebar-track.simplebar-vertical .simplebar-scrollbar::before {
+    top: 0;
+    bottom: 25px;
+    height: calc(100% - 25px);
+  }
+}
+@media screen and (min-width: 768px) {
   .main__scroll {
     overflow-x: hidden;
     margin-right: -30px;
@@ -1275,6 +1339,10 @@ svg {
           justify-content: space-between;
   margin-bottom: 25px;
   width: 100%;
+}
+.main__top--indent {
+  padding-top: 25px;
+  padding-right: 30px;
 }
 @media screen and (min-width: 1366px) {
   .main__top--mobile {
@@ -2786,17 +2854,18 @@ svg {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
 }
+.product__add.is--added .product__btn {
+  display: none;
+}
+.product__add.is--added .product__quantity {
+  display: block;
+}
 .product__btn {
   width: 100%;
 }
-.product__btn.is--hidden {
-  display: none;
-}
 .product__quantity {
-  width: 100%;
-}
-.product__quantity.is--hidden {
   display: none;
+  width: 100%;
 }
 .product__favorites {
   display: -webkit-box;
