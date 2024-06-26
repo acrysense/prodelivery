@@ -294,6 +294,141 @@ svg {
   cursor: text;
 }
 
+.select-box {
+  position: relative;
+}
+.select-box__selected {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  padding: 7px 45px 7px 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 13px;
+  font-weight: 500;
+  color: #323232;
+  background: #FFFFFF;
+  border: 1px solid #C1C1C1;
+  border-radius: 100px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.select-box__selected::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  z-index: 1;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  display: block;
+  width: 7px;
+  height: 7px;
+  background-image: url(../img/sprite.svg#icon-caret-select);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+}
+.select-box__selected--active {
+  border-color: #569F4C;
+}
+.select-box__selected--active::after {
+  -webkit-transform: translate(0, -3px) rotate(180deg);
+      -ms-transform: translate(0, -3px) rotate(180deg);
+          transform: translate(0, -3px) rotate(180deg);
+}
+.select-box__placeholder {
+  display: none;
+}
+.select-box__placeholder--active {
+  display: block;
+}
+.select-box__placeholder, .select-box__values {
+  overflow: hidden;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.select-box__values {
+  display: none;
+}
+.select-box__values--active {
+  display: block;
+}
+.select-box__container {
+  position: absolute;
+  bottom: -6px;
+  z-index: 10;
+  -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+          transform: translateY(100%);
+  padding: 7px 0;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  background: #FFFFFF;
+  border: 1px solid #C1C1C1;
+  border-radius: 15px;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  pointer-events: none;
+}
+.select-box__container--active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+}
+.select-box__container--active .select-box__option {
+  opacity: 1;
+  -webkit-transition: opacity 0.25s ease-in-out 0.05s;
+  transition: opacity 0.25s ease-in-out 0.05s;
+}
+.select-box__option {
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
+}
+.select-box__radio {
+  display: none;
+}
+.select-box__radio:checked + label {
+  font-weight: 600;
+  color: #569F4C;
+}
+.select-box__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0;
+  padding: 7px 20px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #323232;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
 .simplebar-track.simplebar-vertical {
   top: 0;
   right: 30px;
@@ -3710,6 +3845,14 @@ svg {
   margin-bottom: 36px;
   width: 100%;
 }
+@media screen and (max-width: 767px) {
+  .category__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .category__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3756,6 +3899,19 @@ svg {
   .category__amount {
     margin-top: 15px;
     margin-left: 0;
+  }
+}
+.category__select {
+  margin-left: 10px;
+}
+@media screen and (max-width: 767px) {
+  .category__select {
+    margin-top: 15px;
+    margin-left: 0;
+    width: 100%;
+  }
+  .category__select .select-box__selected {
+    width: 100%;
   }
 }
 .category__sections {
