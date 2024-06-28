@@ -1492,6 +1492,9 @@ svg {
             flex-direction: column;
     margin-bottom: 35px;
   }
+  .main__top--indent {
+    padding-right: 0;
+  }
 }
 .main__categories-trigger {
   display: -webkit-box;
@@ -1569,6 +1572,9 @@ svg {
 }
 @media screen and (max-width: 767px) {
   .main__search {
+    position: sticky;
+    top: 0;
+    z-index: 100;
     margin-top: 15px;
     width: 100%;
   }
