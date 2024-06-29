@@ -1446,9 +1446,9 @@ svg {
     position: sticky;
     top: 0;
     z-index: 100;
-    margin: 10px 0;
-    padding: 15px 0;
-    width: 100%;
+    margin: 10px -15px;
+    padding: 15px;
+    width: calc(100% + 30px);
     background: #FFFFFF;
   }
 }
@@ -1641,15 +1641,16 @@ svg {
     padding: 126px 25px 25px;
     background: rgba(50, 50, 50, 0.4);
   }
+  .categories--search {
+    padding-top: 216px;
+  }
 }
 @media screen and (max-width: 767px) {
   .categories {
-    top: 144px;
     right: 15px;
     left: 15px;
     z-index: 900;
     width: calc(100% - 30px);
-    max-height: calc(100dvh - 90px);
   }
 }
 .categories__back {
@@ -1738,7 +1739,7 @@ svg {
 @media screen and (max-width: 767px) {
   .categories__scroll {
     padding: 13px 25px 40px 0;
-    max-height: calc(100dvh - 144px - 25px);
+    max-height: calc(100dvh - 247px - 25px);
   }
 }
 .categories__wrapper {
